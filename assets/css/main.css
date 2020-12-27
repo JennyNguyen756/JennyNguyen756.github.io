@@ -1,6 +1,64 @@
 @import url(fontawesome-all.min.css);
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 
+/* Contact Me */
+
+header.major.contact-me{
+	margin-bottom: 0px;
+}
+
+.img-wrap{
+	display: block;
+    font-size: 100px;
+    min-width: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+	text-align: center;
+}
+
+/* popover */
+.popover__wrapper {
+	position: relative;
+	margin-top: 1rem;
+	display: inline-block;
+	text-align:center;
+  }
+  .popover__content {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	left: -33px;
+	transform: translate(0, 10px);
+	background-color: #bfbfbf;
+	padding: 20px;
+	padding-top: 5px;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.26);
+	width: auto;
+	height: 20px;
+  }
+  .popover__content:before {
+	position: absolute;
+	z-index: -1;
+	content: "";
+	right: calc(50% - 10px);
+	top: -8px;
+	border-style: solid;
+	border-width: 0 10px 10px 10px;
+	border-color: transparent transparent #bfbfbf transparent;
+	transition-duration: 0.3s;
+	transition-property: transform;
+  }
+  .popover__wrapper:hover .popover__content {
+	z-index: 10;
+	opacity: 1;
+	visibility: visible;
+	transform: translate(0, -20px);
+	transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+  }
+  .popover__message {
+	text-align: center;
+	font-size: 10px;
+  }
 
 
 /* skills */
