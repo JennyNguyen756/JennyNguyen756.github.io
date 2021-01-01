@@ -2521,11 +2521,17 @@ input, select, textarea {
 		border: 0;
 		display: inline-block;
 		position: relative;
+
 	}
 
 		.image img {
 			border-radius: 8px;
 			display: block;
+		}
+
+		.experience img{
+			max-width: 90%;
+			padding-left: 10%;
 		}
 
 		.image.left, .image.right {
@@ -2885,14 +2891,13 @@ input, select, textarea {
 		-ms-justify-content: center;
 		justify-content: center;
 		width: calc(100% + 2em);
-		margin: 0 0 3em -2em;
+		margin: 0 0 3em -1em;
 		padding: 0;
 		list-style: none;
 	}
 
 		.features li {
 			width: calc(33.33333% - 2em);
-			margin-left: 2em;
 			margin-top: 3em;
 			padding: 0;
 		}
